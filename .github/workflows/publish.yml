@@ -25,6 +25,8 @@ jobs:
         with:
           node-version: 20
 
+      - run: git config --global user.name "wtto00"
+      - run: git config --global user.email "wtto00@outlook.com"
       - run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
@@ -33,6 +35,10 @@ jobs:
   Publish-Github:
     needs: Release
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+      id-token: write
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
