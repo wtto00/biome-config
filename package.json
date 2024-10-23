@@ -1,0 +1,26 @@
+{
+  "name": "@wtto00/biome-config",
+  "version": "0.0.1",
+  "description": "My config of biome.",
+  "main": "biome.json",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "biome.json"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wtto00/biome-config.git"
+  },
+  "keywords": [
+    "biome",
+    "wtto00"
+  ],
+  "author": "wtto00 <wtto00@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wtto00/biome-config/issues"
+  },
+  "homepage": "https://github.com/wtto00/biome-config#readme"
+}
