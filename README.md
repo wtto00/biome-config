@@ -6,7 +6,7 @@ My config of biome.
 
 ```json
 {
-  "$schema": "https://biomejs.dev/schemas/1.8.0/schema.json",
+  "$schema": "https://biomejs.dev/schemas/2.1.3/schema.json",
   "extends": ["@wtto00/biome-config"]
 }
 ```

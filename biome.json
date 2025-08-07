@@ -1,30 +1,18 @@
 {
-  "$schema": "https://biomejs.dev/schemas/1.8.0/schema.json",
-  "files": {
-    "ignore": ["src-tauri/**/*"]
-  },
-  "organizeImports": {
-    "enabled": true
-  },
+  "$schema": "https://biomejs.dev/schemas/2.1.3/schema.json",
   "vcs": {
-    "enabled": true,
+    "enabled": false,
     "clientKind": "git",
-    "useIgnoreFile": true
+    "useIgnoreFile": false
+  },
+  "files": {
+    "ignoreUnknown": false
   },
   "formatter": {
+    "enabled": true,
     "indentStyle": "space",
-    "lineWidth": 120
-  },
-  "javascript": {
-    "formatter": {
-      "quoteStyle": "single",
-      "semicolons": "asNeeded"
-    }
-  },
-  "css": {
-    "parser": {
-      "cssModules": true
-    }
+    "lineWidth": 120,
+    "indentWidth": 2
   },
   "linter": {
     "enabled": true,
@@ -37,22 +25,23 @@
         "noUnusedImports": "error",
         "noUnusedVariables": "error"
       }
+    },
+    "domains": {
+      "vue": "recommended"
     }
   },
-  "overrides": [
-    {
-      "include": ["*.vue"],
-      "linter": {
-        "rules": {
-          "style": {
-            "useImportType": "off"
-          },
-          "correctness": {
-            "noUnusedImports": "off",
-            "noUnusedVariables": "off"
-          }
-        }
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "single",
+      "semicolons": "asNeeded"
+    }
+  },
+  "assist": {
+    "enabled": true,
+    "actions": {
+      "source": {
+        "organizeImports": "on"
       }
     }
-  ]
+  }
 }
